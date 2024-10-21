@@ -1,0 +1,91 @@
+<!-- 2. Realizar un formulario básico que cuente con una validación mediante alertas. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario</title>
+        <link rel="stylesheet" type="text/css" href="formulario.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--<label for="">:</label>
+            <br>
+
+            <br>
+            <br> -->
+        
+            <div class="titulo">
+                <header>Formulario</header>
+            </div>
+            
+                <form action="submission.html" method="post">
+                    <label for="username">Ingrese su nombre y apellido:</label>
+                    <br>
+                    <input type="text" id="username" name="username" placeholder="Nombre y apellido" required minlength="3" maxlength="25">
+                    <br>
+                    <br>
+                    <label for="correo">Ingrese su correo electrónico:</label>
+                    <br>
+                    <input  type="mail" id="mail" name="mail" placeholder="ejemplo@gmail.com.ar" required minlength="8" maxlength="25">
+                    <br>
+                    <br>
+                    <label for="cumpleaños">Ingrese su fecha de nacimiento:</label>
+                    <br>
+                    <input type="date" id="cumpleaños" name="cumpleaños">
+                    <br>
+                    <br>
+                    <label for="telefono">Ingrese su número de teléfono:</label>
+                    <br>
+                    <input type="tel" id="tel" name="tel" placeholder="Teléfono">
+                    <br>
+                    <br>
+                    <label for="password">Ingrese su nueva contraseña:</label>
+                    <br>
+                    <input type="pw" id="contraseña" name="contraseña" placeholder="Contraseña" required minlength="8" maxlength="25">
+                    <br>
+                    <br>
+                    <label for="confirmacion">Vuelva a ingresar su nueva contraseña:</label>
+                    <br>
+                    <input type="pw" id="confirmacion" name="confirmacion" placeholder="Reingrese contraseña" required minlength="8" maxlength="25">
+                    <br>
+                    <br>
+                    <input type="reset" value="Reset">
+                    <br>
+                    <br>
+                    <button type="submit" onclick=Control()>Enviar</button>
+                </form>
+           
+            <script>          
+                function Control() {
+                    var nombre = document.getElementById('username');
+                    var correo = document.getElementById('mail');
+                    var cumple = document.getElementById('cumpleaños');
+                    var numero = document.getElementById('tel');
+                    var contra = document.getElementById('contraseña');
+                    var recontra = document.getElementById('confirmacion');
+                    if (nombre.value == null || nombre.value == ''){
+                        alert("Falta ingresar su nombre y apellido");
+                    }
+                    if (correo.value == null || correo.value == ''){
+                        alert("Falta ingresar su dirección de correo");
+                    }
+                    if (cumple.value == null || cumple.value == ''){
+                        alert("Falta ingresar su fecha de nacimeinto");
+                    }
+                    if (numero.value == null || numero.value == ''){
+                        alert("Falta ingresar su número de teléfono");
+                    }
+                    if (contra.value == null || contra.value == ''){
+                        alert("Falta ingresar su contraseña");
+                    }
+                    if (recontra.value == null || recontra.value == ''){
+                        alert("Falta confrimar su contraseña");
+                    }
+                    if (recontra.value != contra.value){
+                        alert("La confirmación de su contraseña es erronea, vuelva a ingresar su contraseña");
+                    }
+                }
+            </script>
+        
+    </body>
+</html>

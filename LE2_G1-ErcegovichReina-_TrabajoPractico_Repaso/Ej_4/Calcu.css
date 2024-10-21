@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #bea98c;
+    display: grid;
+    place-items: center;
+}
+
+.calcu {
+    background-color: #6e766e;
+    color: white;
+    width: 400px;
+    max-width: 100%;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem;
+}
+
+.pantalla {
+    grid-column: 1 / 5;
+    background-color: #090c31;
+    padding: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    margin-bottom: 1rem;
+    font-family: Segoe UI Variable Display Light;
+    font-weight: bold;
+}
+
+.btn {
+    background-color: #949a9d;
+    color: white;
+    border: 0;
+    padding: 1.5rem .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cero {
+    grid-column: span 2;
+}
+
+#igual {
+    grid-row: span 2;
+    background-color: #7042e4;
+}

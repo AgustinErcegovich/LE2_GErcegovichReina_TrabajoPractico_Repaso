@@ -1,0 +1,51 @@
+body {
+    font-family: Segoe UI Variable Display Light;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    background-color: #fff9c4;
+  }
+
+  .container {
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  td {
+    text-align: center;
+  }
+
+  #leda {
+    background-color: blue;
+    height: 9rem;
+    width: 5rem;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  #ledr {
+    background-color: red;
+    height: 9rem;
+    width: 5rem;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  #ledve {
+    background-color: green;
+    height: 9rem;
+    width: 5rem;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  #btna:hover, #btnr:hover, #btnve:hover {
+    background-color: rgb(84, 85, 84);
+    color: white;
+  }
+  .boton {
+  width: 11rem;
+  border-color: #000000;
+  }

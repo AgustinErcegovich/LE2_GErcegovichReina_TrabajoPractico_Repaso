@@ -1,0 +1,32 @@
+/*Para secciones: #id (Se utiliza donde el usuario interactua)
+  Para divisiones: .clase (Se utiliza en donde no hay interacción con el usuario)
+*/
+header{
+    background: red;
+    width: 100%;
+    height: 20%;
+    font-family: Broadway;
+    font-size: 150px;
+    color:beige;
+    text-align: center;
+}
+
+section{
+    display:flex;
+    width: 100%;
+    height: 80%;
+}
+
+section img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+section img:hover{
+    width: 50%;
+    opacity: 1;
+    filter: contrast(120%);
+}

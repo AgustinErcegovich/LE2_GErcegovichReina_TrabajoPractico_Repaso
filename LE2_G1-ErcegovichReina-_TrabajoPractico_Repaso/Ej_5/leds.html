@@ -1,0 +1,28 @@
+<!-- 5. Diseñar una interfaz donde se puedan encender 3 leds de distintos colores (determinar colores)
+  y que se muestre por consola que led fue encendido. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>3 LEDs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="leds.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <td class="ledazul"><input type="text" id="leda" readonly></td>
+                <td class="ledrojo"><input type="text" id="ledr" readonly></td>
+                <td class="ledverde"><input type="text" id="ledve" readonly></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="boton" id="btna" value="Prender LED azul"></td>
+                <td><input type="button" class="boton" id="btnr" value="Prender LED rojo"></td>
+                <td><input type="button" class="boton" id="btnve" value="Prender LED verde"></td>
+            </tr>
+        </table>
+    </div>
+    <script type="text/javascript" src="leds.js"></script>
+</body>
+</html>
